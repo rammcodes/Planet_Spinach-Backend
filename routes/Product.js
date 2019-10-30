@@ -28,8 +28,20 @@ router.post("/category/:catId", (req, res) => {
   const { catId } = req.params;
   const data = Products.filter(
     cat => cat.catId.toString() === catId.toString()
-  );
-  res.status(200).send(data[0]);
+  )[0];
+  res.status(200).send(data);
+});
+
+router.post("/category/:catId/:productId", (req, res) => {
+  const { catId, productId } = req.params;
+  const category = Products.filter(
+    cat => cat.catId.toString() === catId.toString()
+  )[0];
+  const data = category.products.filter(
+    p => p.id.toString() === productId.toString()
+  )[0];
+
+  res.status(200).send(data);
 });
 
 module.exports = router;
