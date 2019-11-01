@@ -200,7 +200,7 @@ const Products = [
   },
   {
     catId: 4,
-    catName: "Organic Whole Grains",
+    catName: "Whole Grains",
     products: [
       {
         name: "Boneless High Protein Chicken",
