@@ -15,53 +15,72 @@ router.get("/", async (req, res) => {
 });
 
 //--------------------------------
-router.post("/new/product", async (req, res) => {
-  const { token, productid, categoryid, price } = req.body;
-  const userData = await jwt.decode(token, "saiyan");
-  const userid = userData.id;
+router.post("/add/product", async (req, res) => {
+  const { token, productid, categoryid, price, id } = req.body;
 
-  //----------------
-  await db("basketitems")
-    .insert({
-      productid,
-      categoryid,
-      userid,
-      quantity: 1,
-      total: price
-    })
-    .returning("*");
-
-  //-----------------
-  res.status(200).send("Added Successfully...!");
-});
-
-//--------------------------------
-router.post("/increment/product", async (req, res) => {
-  const { token, id } = req.body;
+  if (productid === undefined && id === undefined)
+    return res.status(400).send("Provide Valid Data");
 
   //----------------
   const userData = await jwt.decode(token, "saiyan");
   const userid = userData.id;
 
-  //----------------
-  let basketitems = await db
-    .select("*")
-    .from("basketitems")
-    .where({ id })
-    .returning("*");
-  let basketitem = basketitems[0];
+  if (id) {
+    try {
+      //----------------
+      let basketitems = await db
+        .select("*")
+        .from("basketitems")
+        .where({ id })
+        .returning("*");
 
-  //----------------
-  if (!(basketitem.userid.toString() === userid.toString()))
-    return res.status(401).send("Access denied");
+      let basketitem = basketitems[0];
 
-  //----------------
-  await db("basketitems")
-    .where({ id, userid })
-    .update({
-      quantity: basketitem.quantity + 1,
-      total: basketitem.total + 10
-    });
+      //----------------
+      if (!(basketitem.userid.toString() === userid.toString()))
+        return res.status(401).send("Access denied");
+
+      let productDetail = Products.filter(
+        p => p.id.toString() === basketitem.productid.toString()
+      )[0];
+
+      console.log(productDetail);
+
+      //----------------
+      await db("basketitems")
+        .where({ id })
+        .update({
+          quantity: basketitem.quantity + 1,
+          total: basketitem.total + 10
+        });
+    } catch (err) {
+      res.status(400).send(err);
+    }
+  } else {
+    //----------------
+    try {
+      let products = await db
+        .select("*")
+        .from("basketitems")
+        .where({ productid, userid })
+        .returning("*");
+
+      //----------------
+      if (!products.length) {
+        await db("basketitems")
+          .insert({
+            productid,
+            categoryid,
+            userid,
+            quantity: 1,
+            total: price
+          })
+          .returning("*");
+      }
+    } catch (err) {
+      res.status(400).send(err);
+    }
+  }
 
   //----------------
   basketitems = await getUserBasket(userid);
@@ -124,17 +143,14 @@ const getUserBasket = async userid => {
     let data = {};
 
     //----------------
-    let category = Products.filter(
-      cat => cat.catId.toString() == userbasket[i].categoryid.toString()
-    )[0];
-
-    //----------------
-    let product = category.products.filter(
+    let product = Products.filter(
       prd => prd.id.toString() === userbasket[i].productid.toString()
     )[0];
 
     //----------------
-    data.cartItemId = userbasket[i].id;
+
+    data.productid = product.id;
+    data.id = userbasket[i].id;
     data.productName = product.name;
     data.productImg = product.images[0];
     data.quantity = userbasket[i].quantity;

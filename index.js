@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 const user = require("./routes/User");
 const product = require("./routes/Product");
 const basket = require("./routes/Basket");
+const admin = require("./routes/Admin");
 
 //-----------------
 app.use(cors());
@@ -14,6 +15,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/user", user);
 app.use("/product", product);
 app.use("/basket", basket);
+app.use("/admin", admin);
 
 //-----------------
 app.listen(5000, () => {
