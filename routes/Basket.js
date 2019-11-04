@@ -41,17 +41,15 @@ router.post("/add/product", async (req, res) => {
         return res.status(401).send("Access denied");
 
       let productDetail = Products.filter(
-        p => p.id.toString() === basketitem.productid.toString()
+        p => p.id === basketitem.productid
       )[0];
-
-      console.log(productDetail);
 
       //----------------
       await db("basketitems")
         .where({ id })
         .update({
           quantity: basketitem.quantity + 1,
-          total: basketitem.total + 10
+          total: basketitem.total + productDetail.price.amount
         });
     } catch (err) {
       res.status(400).send(err);

@@ -216,6 +216,114 @@ const Products = [
     ]
   },
   {
+    id: 101,
+    name: "Boneless High Protein Chicken",
+    price: {
+      amount: 10,
+      unit: "kg"
+    },
+    catId: 2,
+    images: [
+      "https://www.bigbasket.com/media/uploads/p/l/10000900_8-fresho-chicken-breast-boneless.jpg"
+    ]
+  },
+  {
+    id: 102,
+    name: "Boneless High Protein Chicken",
+    price: {
+      amount: 10,
+      unit: "kg"
+    },
+    catId: 2,
+    images: [
+      "https://www.bigbasket.com/media/uploads/p/l/10000900_8-fresho-chicken-breast-boneless.jpg"
+    ]
+  },
+  {
+    id: 103,
+    name: "Boneless High Protein Chicken",
+    price: {
+      amount: 10,
+      unit: "kg"
+    },
+    catId: 2,
+    images: [
+      "https://www.bigbasket.com/media/uploads/p/l/10000900_8-fresho-chicken-breast-boneless.jpg"
+    ]
+  },
+  {
+    id: 104,
+    name: "Boneless High Protein Chicken",
+    price: {
+      amount: 10,
+      unit: "kg"
+    },
+    catId: 2,
+    images: [
+      "https://www.bigbasket.com/media/uploads/p/l/10000900_8-fresho-chicken-breast-boneless.jpg"
+    ]
+  },
+  {
+    id: 105,
+    name: "Boneless High Protein Chicken",
+    price: {
+      amount: 10,
+      unit: "kg"
+    },
+    catId: 2,
+    images: [
+      "https://www.bigbasket.com/media/uploads/p/l/10000900_8-fresho-chicken-breast-boneless.jpg"
+    ]
+  },
+  {
+    id: 106,
+    name: "Boneless High Protein Chicken",
+    price: {
+      amount: 10,
+      unit: "kg"
+    },
+    catId: 2,
+    images: [
+      "https://www.bigbasket.com/media/uploads/p/l/10000900_8-fresho-chicken-breast-boneless.jpg"
+    ]
+  },
+  {
+    id: 107,
+    name: "Boneless High Protein Chicken",
+    price: {
+      amount: 10,
+      unit: "kg"
+    },
+    catId: 2,
+    images: [
+      "https://www.bigbasket.com/media/uploads/p/l/10000900_8-fresho-chicken-breast-boneless.jpg"
+    ]
+  },
+  {
+    id: 108,
+    name: "Boneless High Protein Chicken",
+    price: {
+      amount: 10,
+      unit: "kg"
+    },
+    catId: 2,
+    images: [
+      "https://www.bigbasket.com/media/uploads/p/l/10000900_8-fresho-chicken-breast-boneless.jpg"
+    ]
+  },
+  {
+    id: 109,
+    name: "Boneless High Protein Chicken",
+    price: {
+      amount: 10,
+      unit: "kg"
+    },
+    catId: 2,
+    images: [
+      "https://www.bigbasket.com/media/uploads/p/l/10000900_8-fresho-chicken-breast-boneless.jpg"
+    ]
+  },
+  {
     id: 17,
     name: "Boneless High Protein Chicken",
     price: {

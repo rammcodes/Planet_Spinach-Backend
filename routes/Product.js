@@ -51,15 +51,25 @@ router.post("/limitedItems", async (req, res) => {
 
 router.post("/category/:catId", async (req, res) => {
   const { catId } = req.params;
+  const { page, limit } = req.query;
   const category = await db
     .select("*")
     .from("categories")
     .where({ id: catId });
-  let data = Products.filter(prd => prd.catId.toString() === catId.toString());
+  let productsAll = Products.filter(
+    prd => prd.catId.toString() === catId.toString()
+  );
+
+  let products = productsAll.filter(
+    (prd, i) => i >= (page - 1) * limit && i < page * limit
+  );
+
   let newData = {
     catName: category[0].name,
-    products: data
+    products,
+    hasMore: productsAll[page * limit]
   };
+
   return res.status(200).send(newData);
 });
 
