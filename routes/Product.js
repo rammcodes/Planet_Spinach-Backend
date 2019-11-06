@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const jwt = require("jsonwebtoken");
 const Products = require("../tempData/Product");
 const db = require("../db");
 
@@ -73,12 +74,42 @@ router.post("/category/:catId", async (req, res) => {
   return res.status(200).send(newData);
 });
 
-router.post("/single/:productId", (req, res) => {
+router.post("/single/:productId", async (req, res) => {
   const { productId } = req.params;
-  const data = Products.filter(
-    p => p.id.toString() === productId.toString()
-  )[0];
-  res.status(200).send(data);
+  const { token } = req.body;
+
+  if (token) {
+    //----------------
+    const userData = await jwt.decode(token, "saiyan");
+    const userid = userData.id;
+
+    const basketitems = await db("basketitems")
+      .select("*")
+      .where({ userid, productid: productId });
+
+    const products = Products.filter(
+      p => p.id.toString() === productId.toString()
+    )[0];
+
+    if (basketitems.length) {
+      const data = {
+        products,
+        quantity: basketitems[0].quantity
+      };
+      res.status(200).send(data);
+    } else {
+      const data = {
+        products,
+        quantity: 0
+      };
+      res.status(200).send(data);
+    }
+  } else {
+    const products = Products.filter(
+      p => p.id.toString() === productId.toString()
+    )[0];
+    res.status(200).send({ products, quantity: undefined });
+  }
 });
 
 module.exports = router;
