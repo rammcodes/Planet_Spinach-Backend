@@ -105,7 +105,7 @@ router.post("/single/:productId", async (req, res) => {
       res.status(200).send(data);
     }
   } else {
-    const products = Products.filter(
+    const product = Products.filter(
       p => p.id.toString() === productId.toString()
     )[0];
     res.status(200).send({ product, quantity: undefined });
