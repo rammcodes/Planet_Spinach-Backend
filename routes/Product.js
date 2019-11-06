@@ -93,13 +93,13 @@ router.post("/single/:productId", async (req, res) => {
 
     if (basketitems.length) {
       const data = {
-        products,
+        product,
         quantity: basketitems[0].quantity
       };
       res.status(200).send(data);
     } else {
       const data = {
-        products,
+        product,
         quantity: 0
       };
       res.status(200).send(data);
@@ -108,7 +108,7 @@ router.post("/single/:productId", async (req, res) => {
     const products = Products.filter(
       p => p.id.toString() === productId.toString()
     )[0];
-    res.status(200).send({ products, quantity: undefined });
+    res.status(200).send({ product, quantity: undefined });
   }
 });
 
