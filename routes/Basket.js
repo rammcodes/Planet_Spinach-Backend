@@ -131,7 +131,8 @@ const getUserBasket = async userid => {
     .select("*")
     .from("basketitems")
     .where({ userid })
-    .returning("*");
+    .returning("*")
+    .orderBy("id");
 
   //----------------
   let basketCollection = [];
