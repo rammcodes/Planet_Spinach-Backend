@@ -87,7 +87,7 @@ router.post("/single/:productId", async (req, res) => {
       .select("*")
       .where({ userid, productid: productId });
 
-    const products = Products.filter(
+    const product = Products.filter(
       p => p.id.toString() === productId.toString()
     )[0];
 
