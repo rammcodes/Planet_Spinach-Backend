@@ -16,7 +16,7 @@ router.get("/", async (req, res) => {
 
 //--------------------------------
 router.post("/add/product", async (req, res) => {
-  const { token, productid, categoryid, price, id } = req.body;
+  const { token, productid, categoryid, price, id, single } = req.body;
 
   if (productid === undefined && id === undefined)
     return res.status(400).send("Provide Valid Data");
@@ -65,7 +65,7 @@ router.post("/add/product", async (req, res) => {
 
       //----------------
       if (!products.length) {
-        await db("basketitems")
+        let data = await db("basketitems")
           .insert({
             productid,
             categoryid,
@@ -74,6 +74,16 @@ router.post("/add/product", async (req, res) => {
             total: price
           })
           .returning("*");
+
+        const product = Products.filter(
+          p => p.id.toString() === productid.toString()
+        )[0];
+
+        if (single === true) {
+          return res
+            .status(200)
+            .send({ product, quantity: data[0].quantity, single: true });
+        }
       }
     } catch (err) {
       res.status(400).send(err);
