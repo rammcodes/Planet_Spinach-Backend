@@ -926,8 +926,7 @@ const Products = [
     },
     catId: 8,
     images: [
-      "https://www.bigbasket.com/media/uploads/p/xxl/40089077_5-prasuma-pork-belly-slice.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/20003673_5-fresho-basa-fish-fillet.jpg"
+      "https://www.bigbasket.com/media/uploads/p/l/1203097_1-bb-royal-jaggery-kolhapuri-900-g-till-regular-500-g.jpg"
     ]
   },
   {
