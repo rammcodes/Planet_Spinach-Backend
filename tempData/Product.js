@@ -8,8 +8,8 @@ const Products = [
     },
     catId: 1,
     images: [
-      "https://www.bigbasket.com/media/uploads/p/l/100482055-3_6-daawat-basmati-rice-brown-quick-cooking.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/100482055-2_6-daawat-basmati-rice-brown-quick-cooking.jpg"
+      "https://www.bigbasket.com/media/uploads/p/l/100482055-2_6-daawat-basmati-rice-brown-quick-cooking.jpg",
+      "https://www.bigbasket.com/media/uploads/p/l/100482055-3_6-daawat-basmati-rice-brown-quick-cooking.jpg"
     ]
   },
   {
