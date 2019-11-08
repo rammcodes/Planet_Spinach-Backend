@@ -1,14 +1,15 @@
 const Products = [
   {
     id: 1,
-    name: "Boneless High Protein Chicken",
+    name: "Brown Rice (Long Grain) ",
     price: {
       amount: 10,
       unit: "kg"
     },
     catId: 1,
     images: [
-      "https://www.bigbasket.com/media/uploads/p/l/10000900_8-fresho-chicken-breast-boneless.jpg"
+      "https://www.bigbasket.com/media/uploads/p/l/100482055-2_6-daawat-basmati-rice-brown-quick-cooking.jpg",
+      "https://www.bigbasket.com/media/uploads/p/l/100482055-3_6-daawat-basmati-rice-brown-quick-cooking.jpg"
     ]
   },
   {
