@@ -644,111 +644,104 @@ const Products = [
   },
   {
     id: 41,
-    name: "Boneless High Protein Chicken",
+    name: "Organic Red Apple",
     price: {
       amount: 10,
       unit: "kg"
     },
     catId: 6,
     images: [
-      "https://www.bigbasket.com/media/uploads/p/l/10000900_8-fresho-chicken-breast-boneless.jpg"
+      "https://www.bigbasket.com/media/uploads/p/xxl/40033824_17-fresho-apple-red-delicious-regular.jpg",
+      "https://www.bigbasket.com/media/uploads/p/l/40033824-2_10-fresho-apple-red-delicious-regular.jpg"
     ]
   },
   {
     id: 42,
-    name: "High Protein Sea Fish",
+    name: "Organic Kiwi",
     price: {
       amount: 10,
       unit: "kg"
     },
     catId: 6,
     images: [
-      "https://www.bigbasket.com/media/uploads/p/l/20003673_5-fresho-basa-fish-fillet.jpg"
+      "https://www.bigbasket.com/media/uploads/p/l/20000911_28-fresho-kiwi-green.jpg",
+      "https://www.bigbasket.com/media/uploads/p/l/20000911-3_9-fresho-kiwi-green.jpg"
     ]
   },
 
   {
     id: 43,
-    name: "Boneless High Protein Chicken",
+    name: "Organic Coconut",
     price: {
       amount: 10,
       unit: "kg"
     },
     catId: 6,
-
     images: [
-      "https://www.bigbasket.com/media/uploads/p/l/700110565_1-lazees-chicken-chicken-breast-boneless.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/10000900_8-fresho-chicken-breast-boneless.jpg"
+      "https://www.bigbasket.com/media/uploads/p/l/40023478_4-fresho-coconut-organically-grown.jpg",
+      "https://www.bigbasket.com/media/uploads/p/l/40023478-2_1-fresho-coconut-organically-grown.jpg"
     ]
   },
   {
     id: 44,
-    name: "High Protein Sea Fish",
+    name: "Organic Raw Banana",
     price: {
       amount: 10,
       unit: "kg"
     },
     catId: 6,
     images: [
-      "https://www.bigbasket.com/media/uploads/p/l/10000928_9-fresho-chicken-lollipop.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/700110577_1-lazees-chicken-chicken-drumsticks-skinless.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/20003673_5-fresho-basa-fish-fillet.jpg"
+      "https://www.bigbasket.com/media/uploads/p/l/10000167-2_2-fresho-banana-raw-green.jpg",
+      "https://www.bigbasket.com/media/uploads/p/l/10000167-4_2-fresho-banana-raw-green.jpg"
     ]
   },
 
   {
     id: 45,
-    name: "Boneless High Protein Chicken",
+    name: "Organic Guava",
     price: {
       amount: 10,
       unit: "kg"
     },
     catId: 6,
     images: [
-      "https://www.bigbasket.com/media/uploads/p/l/40068151_1-big-sams-atlantic-salmon-portion-single.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/10000900_8-fresho-chicken-breast-boneless.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/40068151_1-big-sams-atlantic-salmon-portion-single.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/10000900_8-fresho-chicken-breast-boneless.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/40068151_1-big-sams-atlantic-salmon-portion-single.jpg"
+      "https://www.bigbasket.com/media/uploads/p/l/10000370_13-fresho-guava.jpg"
     ]
   },
   {
     id: 46,
-    name: "High Protein Sea Fish",
+    name: "Organic American Oranges",
     price: {
       amount: 10,
       unit: "kg"
     },
     catId: 6,
     images: [
-      "https://www.bigbasket.com/media/uploads/p/xxl/40089077_5-prasuma-pork-belly-slice.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/20003673_5-fresho-basa-fish-fillet.jpg"
+      "https://www.bigbasket.com/media/uploads/p/l/20003956_3-fresho-baby-orange.jpg"
     ]
   },
   {
     id: 47,
-    name: "Boneless High Protein Chicken",
+    name: "Organic Green Pears",
     price: {
       amount: 10,
       unit: "kg"
     },
     catId: 6,
     images: [
-      "https://www.bigbasket.com/media/uploads/p/l/40125071_2-quickees-sausage-pork-cocktail.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/10000900_8-fresho-chicken-breast-boneless.jpg"
+      "https://www.bigbasket.com/media/uploads/p/l/40048445_2-fresho-pear-green-imported.jpg"
     ]
   },
   {
     id: 48,
-    name: "High Protein Sea Fish",
+    name: "Organic Raw Papaya",
     price: {
       amount: 10,
       unit: "kg"
     },
     catId: 6,
     images: [
-      "https://www.bigbasket.com/media/uploads/p/l/10000908_14-fresho-chicken-curry-cut-without-skin.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/20003673_5-fresho-basa-fish-fillet.jpg"
+      "https://www.bigbasket.com/media/uploads/p/l/30000605_12-fresho-papaya-raw.jpg"
     ]
   },
   {
