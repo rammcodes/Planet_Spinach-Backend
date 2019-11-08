@@ -82,28 +82,28 @@ const Products = [
   },
   {
     id: 7,
-    name: "Boneless High Protein Chicken",
+    name: "Jowar Flour",
     price: {
       amount: 10,
       unit: "kg"
     },
     catId: 1,
     images: [
-      "https://www.bigbasket.com/media/uploads/p/l/40125071_2-quickees-sausage-pork-cocktail.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/10000900_8-fresho-chicken-breast-boneless.jpg"
+      "https://www.bigbasket.com/media/uploads/p/l/40125920_6-bb-royal-organic-jowar-flour.jpg",
+      "https://www.bigbasket.com/media/uploads/p/l/40125920-2_1-bb-royal-organic-jowar-flour.jpg"
     ]
   },
   {
     id: 8,
-    name: "High Protein Sea Fish",
+    name: "Broken Whole Wheat",
     price: {
       amount: 10,
       unit: "kg"
     },
     catId: 1,
     images: [
-      "https://www.bigbasket.com/media/uploads/p/l/10000908_14-fresho-chicken-curry-cut-without-skin.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/20003673_5-fresho-basa-fish-fillet.jpg"
+      "https://www.bigbasket.com/media/uploads/p/l/40026597-4_2-bb-royal-wheat-brokendalia.jpg",
+      "https://www.bigbasket.com/media/uploads/p/l/40026597-3_2-bb-royal-wheat-brokendalia.jpg"
     ]
   },
   {
