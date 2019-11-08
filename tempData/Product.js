@@ -8,8 +8,8 @@ const Products = [
     },
     catId: 1,
     images: [
-      "https://www.bigbasket.com/media/uploads/p/l/100482055-2_6-daawat-basmati-rice-brown-quick-cooking.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/100482055-3_6-daawat-basmati-rice-brown-quick-cooking.jpg"
+      "https://www.bigbasket.com/media/uploads/p/l/100482055-3_6-daawat-basmati-rice-brown-quick-cooking.jpg",
+      "https://www.bigbasket.com/media/uploads/p/l/100482055-2_6-daawat-basmati-rice-brown-quick-cooking.jpg"
     ]
   },
   {
@@ -21,7 +21,9 @@ const Products = [
     },
     catId: 1,
     images: [
-      "https://www.bigbasket.com/media/uploads/p/l/20003673_5-fresho-basa-fish-fillet.jpg"
+      "https://www.bigbasket.com/media/uploads/p/l/40072466-2_4-bb-royal-organic-brown-rice.jpg",
+      "https://www.bigbasket.com/media/uploads/p/l/40072466-5_2-bb-royal-organic-brown-rice.jpg",
+      "https://www.bigbasket.com/media/uploads/p/l/40072466-3_4-bb-royal-organic-brown-rice.jpg"
     ]
   },
 
