@@ -69,15 +69,14 @@ const Products = [
   },
   {
     id: 6,
-    name: "High Protein Sea Fish",
+    name: "Whole Wheat Flour",
     price: {
       amount: 10,
       unit: "kg"
     },
     catId: 1,
     images: [
-      "https://www.bigbasket.com/media/uploads/p/xxl/40089077_5-prasuma-pork-belly-slice.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/20003673_5-fresho-basa-fish-fillet.jpg"
+      "https://www.bigbasket.com/media/uploads/p/l/1205371_1-bb-royal-organic-whole-wheat-atta.jpg"
     ]
   },
   {
