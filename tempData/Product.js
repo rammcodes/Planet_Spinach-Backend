@@ -350,7 +350,7 @@ const Products = [
 
   {
     id: 19,
-    name: "Boneless High Protein Chicken",
+    name: "White Chickpeas",
     price: {
       amount: 10,
       unit: "kg"
@@ -358,78 +358,80 @@ const Products = [
     catId: 3,
 
     images: [
-      "https://www.bigbasket.com/media/uploads/p/l/700110565_1-lazees-chicken-chicken-breast-boneless.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/10000900_8-fresho-chicken-breast-boneless.jpg"
+      "https://www.bigbasket.com/media/uploads/p/l/10000461_12-bb-royal-channa-kabuli.jpg",
+      "https://www.bigbasket.com/media/uploads/p/l/10000461-2_2-bb-royal-channa-kabuli.jpg",
+      "https://www.bigbasket.com/media/uploads/p/l/10000461-3_2-bb-royal-channa-kabuli.jpg"
     ]
   },
   {
     id: 20,
-    name: "High Protein Sea Fish",
+    name: "Kidney Beans",
     price: {
       amount: 10,
       unit: "kg"
     },
     catId: 3,
     images: [
-      "https://www.bigbasket.com/media/uploads/p/l/10000928_9-fresho-chicken-lollipop.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/700110577_1-lazees-chicken-chicken-drumsticks-skinless.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/20003673_5-fresho-basa-fish-fillet.jpg"
+      "https://www.bigbasket.com/media/uploads/p/l/10000437_14-bb-royal-rajma-whitechitra.jpg",
+      "https://www.bigbasket.com/media/uploads/p/l/10000437-2_8-bb-royal-rajma-whitechitra.jpg",
+      "https://www.bigbasket.com/media/uploads/p/l/10000437-3_8-bb-royal-rajma-whitechitra.jpg"
     ]
   },
 
   {
     id: 21,
-    name: "Boneless High Protein Chicken",
+    name: "Black Chickpeas",
     price: {
       amount: 10,
       unit: "kg"
     },
     catId: 3,
     images: [
-      "https://www.bigbasket.com/media/uploads/p/l/40068151_1-big-sams-atlantic-salmon-portion-single.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/10000900_8-fresho-chicken-breast-boneless.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/40068151_1-big-sams-atlantic-salmon-portion-single.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/10000900_8-fresho-chicken-breast-boneless.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/40068151_1-big-sams-atlantic-salmon-portion-single.jpg"
+      "https://www.bigbasket.com/media/uploads/p/l/40135838_5-bb-royal-organic-brown-chanachanna-brown.jpg",
+      "https://www.bigbasket.com/media/uploads/p/l/40135838-2_2-bb-royal-organic-brown-chanachanna-brown.jpg",
+      "https://www.bigbasket.com/media/uploads/p/l/40135838-3_2-bb-royal-organic-brown-chanachanna-brown.jpg"
     ]
   },
   {
     id: 22,
-    name: "High Protein Sea Fish",
+    name: "Mix Protein Pulses",
     price: {
       amount: 10,
       unit: "kg"
     },
     catId: 3,
     images: [
-      "https://www.bigbasket.com/media/uploads/p/xxl/40089077_5-prasuma-pork-belly-slice.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/20003673_5-fresho-basa-fish-fillet.jpg"
+      "https://www.bigbasket.com/media/uploads/p/l/30010466_4-bb-royal-mix-dal.jpg",
+      "https://www.bigbasket.com/media/uploads/p/l/30010466-2_4-bb-royal-mix-dal.jpg",
+      "https://www.bigbasket.com/media/uploads/p/l/30010466-3_4-bb-royal-mix-dal.jpg"
     ]
   },
   {
     id: 23,
-    name: "Boneless High Protein Chicken",
+    name: "Protein Peanuts",
     price: {
       amount: 10,
       unit: "kg"
     },
     catId: 3,
     images: [
-      "https://www.bigbasket.com/media/uploads/p/l/40125071_2-quickees-sausage-pork-cocktail.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/10000900_8-fresho-chicken-breast-boneless.jpg"
+      "https://www.bigbasket.com/media/uploads/p/l/30000120_10-bb-royal-peanutsmungaphalishengdana-raw.jpg",
+      "https://www.bigbasket.com/media/uploads/p/l/30000120-2_4-bb-royal-peanutsmungaphalishengdana-raw.jpg",
+      "https://www.bigbasket.com/media/uploads/p/l/30000120-3_4-bb-royal-peanutsmungaphalishengdana-raw.jpg"
     ]
   },
   {
     id: 24,
-    name: "High Protein Sea Fish",
+    name: "High Protein Corn Seeds",
     price: {
       amount: 10,
       unit: "kg"
     },
     catId: 3,
     images: [
-      "https://www.bigbasket.com/media/uploads/p/l/10000908_14-fresho-chicken-curry-cut-without-skin.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/20003673_5-fresho-basa-fish-fillet.jpg"
+      "https://www.bigbasket.com/media/uploads/p/l/20000566_8-bb-royal-popcorn-seeds.jpg",
+      "https://www.bigbasket.com/media/uploads/p/l/20000566-2_5-bb-royal-popcorn-seeds.jpg",
+      "https://www.bigbasket.com/media/uploads/p/l/20000566-3_5-bb-royal-popcorn-seeds.jpg"
     ]
   },
   {
