@@ -323,26 +323,28 @@ const Products = [
   },
   {
     id: 17,
-    name: "Boneless High Protein Chicken",
+    name: "Organic Plant Protein",
     price: {
       amount: 10,
       unit: "kg"
     },
     catId: 3,
     images: [
-      "https://www.bigbasket.com/media/uploads/p/l/10000900_8-fresho-chicken-breast-boneless.jpg"
+      "https://www.bigbasket.com/media/uploads/p/xxl/40139755_2-kapiva-ayurveda-100-plant-protein-superfood-with-greens-nutrition-powder-berry.jpg",
+      "https://www.bigbasket.com/media/uploads/p/xxl/40139755-2_2-kapiva-ayurveda-100-plant-protein-superfood-with-greens-nutrition-powder-berry.jpg"
     ]
   },
   {
     id: 18,
-    name: "High Protein Sea Fish",
+    name: "Next Level Plant Protein",
     price: {
       amount: 10,
       unit: "kg"
     },
     catId: 3,
     images: [
-      "https://www.bigbasket.com/media/uploads/p/l/20003673_5-fresho-basa-fish-fillet.jpg"
+      "https://cdn.shopify.com/s/files/1/2393/2199/products/IMG_3000_4000x.progressive.JPG?v=1553079788",
+      "https://cdn.shopify.com/s/files/1/2393/2199/products/IMG_3004_4000x.progressive.JPG?v=1553079788"
     ]
   },
 
