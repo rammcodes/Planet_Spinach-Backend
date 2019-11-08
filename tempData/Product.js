@@ -14,7 +14,7 @@ const Products = [
   },
   {
     id: 2,
-    name: "High Protein Sea Fish",
+    name: "Brown Rice (Small Grain)",
     price: {
       amount: 10,
       unit: "kg"
@@ -29,46 +29,42 @@ const Products = [
 
   {
     id: 3,
-    name: "Boneless High Protein Chicken",
+    name: "Rolled Oats",
     price: {
       amount: 10,
       unit: "kg"
     },
     catId: 1,
     images: [
-      "https://www.bigbasket.com/media/uploads/p/l/700110565_1-lazees-chicken-chicken-breast-boneless.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/10000900_8-fresho-chicken-breast-boneless.jpg"
+      "https://www.bigbasket.com/media/uploads/p/l/40082902_11-by-nature-oats-rolled.jpg",
+      "https://www.bigbasket.com/media/uploads/p/l/40082902-2_8-by-nature-oats-rolled.jpg"
     ]
   },
   {
     id: 4,
-    name: "High Protein Sea Fish",
+    name: "Plane Oats",
     price: {
       amount: 10,
       unit: "kg"
     },
     catId: 1,
     images: [
-      "https://www.bigbasket.com/media/uploads/p/l/10000928_9-fresho-chicken-lollipop.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/700110577_1-lazees-chicken-chicken-drumsticks-skinless.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/20003673_5-fresho-basa-fish-fillet.jpg"
+      "https://www.bigbasket.com/media/uploads/p/l/40082903_10-by-nature-oats-steel-cut.jpg",
+      "https://www.bigbasket.com/media/uploads/p/l/40082903-2_3-by-nature-oats-steel-cut.jpg"
     ]
   },
 
   {
     id: 5,
-    name: "Boneless High Protein Chicken",
+    name: "Gluten Free Oats",
     price: {
       amount: 10,
       unit: "kg"
     },
     catId: 1,
     images: [
-      "https://www.bigbasket.com/media/uploads/p/l/40068151_1-big-sams-atlantic-salmon-portion-single.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/10000900_8-fresho-chicken-breast-boneless.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/40068151_1-big-sams-atlantic-salmon-portion-single.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/10000900_8-fresho-chicken-breast-boneless.jpg",
-      "https://www.bigbasket.com/media/uploads/p/l/40068151_1-big-sams-atlantic-salmon-portion-single.jpg"
+      "https://www.bigbasket.com/media/uploads/p/l/40145270_2-nutriwish-gluten-free-rolled-oats-premium.jpg",
+      "https://www.bigbasket.com/media/uploads/p/l/40145270-2_4-nutriwish-gluten-free-rolled-oats-premium.jpg"
     ]
   },
   {
