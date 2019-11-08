@@ -1,15 +1,14 @@
 const Products = [
   {
     id: 1,
-    name: "Whole Wheat Grain",
+    name: "Boneless High Protein Chicken",
     price: {
       amount: 10,
       unit: "kg"
     },
     catId: 1,
     images: [
-      "https://images-na.ssl-images-amazon.com/images/I/714BVAP84tL._SL1500_.jpg",
-      "https://images-na.ssl-images-amazon.com/images/I/71eOvHPg-jL._SL1500_.jpg"
+      "https://www.bigbasket.com/media/uploads/p/l/10000900_8-fresho-chicken-breast-boneless.jpg"
     ]
   },
   {
