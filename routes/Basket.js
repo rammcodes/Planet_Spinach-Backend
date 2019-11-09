@@ -170,7 +170,12 @@ const getUserBasket = async userid => {
   }
 
   //----------------
-  return basketCollection;
+  let total = 0;
+  for (i = 0; i < basketCollection.length; i++) {
+    total += basketCollection[i].total;
+  }
+
+  return { records: basketCollection, total };
 };
 
 module.exports = router;
